@@ -22,8 +22,8 @@ public class LocationCommands  extends AbstractCommand implements CommandExecuto
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args) {
 		
-		if (cmd.getName().equalsIgnoreCase("loc")) {
-			if (sender.hasPermission("rsmp.loc") || sender.isOp()) {
+		if (arg.equalsIgnoreCase("loc")) {
+			if (hasPermission(sender, arg)) {
 				int argsLength = args.length;
 				Player target = null;
 				
@@ -31,7 +31,7 @@ public class LocationCommands  extends AbstractCommand implements CommandExecuto
 					if (sender instanceof Player) {
 						target = (Player) sender;
 					} else {
-						errorMssage(sender, "You must be a player to get your own location");
+						errorMessage(sender, "You must be a player to get your own location");
 						return false;
 					}
 

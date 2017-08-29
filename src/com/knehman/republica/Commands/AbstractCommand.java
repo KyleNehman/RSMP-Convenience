@@ -6,6 +6,7 @@ import java.util.Map;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
 import com.knehman.republica.RepublicaPlugin;
@@ -42,6 +43,11 @@ public class AbstractCommand {
 				}
 			}
 		}
+	}
+
+	public static boolean hasPermission(CommandSender player, String command) {
+		String perm = commandPerms.get(command);
+		return player.isOp() || player.hasPermission(perm);
 	}
 	
 	void message(CommandSender sender, String message) {
