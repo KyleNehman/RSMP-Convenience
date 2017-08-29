@@ -55,6 +55,9 @@ public class LocationCommands  extends AbstractCommand implements CommandExecuto
 				
 				message(sender, target.getName() + "'s location: " + locString);
 				return true;
+			} else {
+				errorMessage(sender, "You do not have permission for that");
+				return true;
 			}
 		}
 		return false;
