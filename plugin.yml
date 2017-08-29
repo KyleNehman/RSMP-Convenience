@@ -1,4 +1,4 @@
-main: republica.knehman.com.RepublicaPlugin
+main: com.knehman.republica.RepublicaPlugin
 name: RSMP
 version: 1.0
 author: Perolan
