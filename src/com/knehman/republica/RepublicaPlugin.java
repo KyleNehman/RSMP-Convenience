@@ -2,8 +2,8 @@ package com.knehman.republica;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import republica.knehman.com.Commands.AbstractCommand;
-import republica.knehman.com.Commands.LocationCommands;
+import com.knehman.republica.Commands.AbstractCommand;
+import com.knehman.republica.Commands.LocationCommands;
 
 public class RepublicaPlugin extends JavaPlugin {
 

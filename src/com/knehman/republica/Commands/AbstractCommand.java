@@ -8,7 +8,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 
-import republica.knehman.com.RepublicaPlugin;
+import com.knehman.republica.RepublicaPlugin;
 
 public class AbstractCommand {
 	static Map<String, List<String>> loadedCommands = new HashMap<String, List<String>>();
