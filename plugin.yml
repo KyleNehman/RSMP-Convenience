@@ -1,0 +1,9 @@
+main: republica.knehman.com.RepublicaPlugin
+name: RSMP
+version: 1.0
+author: Perolan
+description: RSMP Convenience
+commands:
+  loc:
+    description: Find a player's location
+    usage: /loc <player>
