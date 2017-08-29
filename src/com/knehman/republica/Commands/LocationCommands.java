@@ -28,7 +28,11 @@ public class LocationCommands  extends AbstractCommand implements CommandExecuto
 				Player target = null;
 				
 				if (argsLength == 0) {
-					target = (Player) sender;
+					if (sender instanceof Player) {
+						target = (Player) sender;
+					} else {
+						message(sender, "You must be a player to get your own location");
+					}
 				} else if (argsLength == 1) {
 					target = Bukkit.getPlayer(args[0]);
 				} else {
