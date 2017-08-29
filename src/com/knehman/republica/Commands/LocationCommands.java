@@ -31,7 +31,7 @@ public class LocationCommands  extends AbstractCommand implements CommandExecuto
 					if (sender instanceof Player) {
 						target = (Player) sender;
 					} else {
-						message(sender, "You must be a player to get your own location");
+						errorMssage(sender, "You must be a player to get your own location");
 						return false;
 					}
 
